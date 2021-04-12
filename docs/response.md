@@ -5,7 +5,7 @@ title: Response
 Rendering the response is based on the type of the response, below is the different types of responses you can render
 
 ## Rendering HTML
-`HTML` is rendered using the method `c.HTM(code int, templateName string, obj interface{})` in the context
+`HTML` is rendered using the method `c.HTML(code int, templateName string, obj interface{})` in the context
 ```go
 func SomeHandler(c *gin.Context) {
     c.HTML(http.StatusOK, "index.html", gin.H{
